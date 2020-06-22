@@ -23,4 +23,16 @@
             require('./views/vueIndex.php');
         }
     }
+
+    function getAge()
+    {
+        $eleves = getAllAge();
+        require('./views/vueAge.php');
+    }
+
+    function getActif()
+    {
+        $groupes = getAllActif();
+        require('./views/vueActif.php');
+    }
 ?>

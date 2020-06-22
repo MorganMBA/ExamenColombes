@@ -46,10 +46,8 @@
                 <h4></h4>
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active">HOME</li>
-                    <li><a href="index.php?action=ajouteleve"> Ajouter nouvel eleve </a></li>
-                    <li><a href="index.php?action=listeeleve"> Liste des eleves </a></li>
-                    <li><a href="index.php?action=ajoutgroupe"> creer un groupe </a></li>
-                    <li><a href="index.php?action=listegroupe"> Liste des groupes </a></li>
+                    <li><a href="index.php?action=getAge"> Afficher les âges </a></li>
+                    <li><a href="index.php?action=getActif"> Afficher les actifs </a></li>
                     <li><a href="index.php?action=recherche"> Recherche </a></li>
                     <li><a href="index.php?action=deconnecter"> Se deconnecter </a></li>
                 </ul><br>

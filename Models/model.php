@@ -8,6 +8,21 @@
         return $result; 
     }
 
+    function getAllAge()
+    {
+        $bdd =  dbConnect();
+        $req =  $bdd->query('SELECT * FROM age');
+
+        return $req;
+    }
+
+    function getAllActif()
+    {
+        $bdd =  dbConnect();
+        $req =  $bdd->query('SELECT * FROM actif');
+
+        return $req;
+    }
 
     function disconnect($session)
     {

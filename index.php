@@ -6,8 +6,23 @@
                 case 'connexion':
                     verifyConnect($_POST['mail'],$_POST['password']);
                     break;
-        }            
-    } else {
-        require('./views/vueIndex.php');
-    }
+        }  if(isset($_SESSION['access'])){ 
+            switch($_GET['action']) {  
+        case 'getAge':
+            addStudents();
+            break;
+        case 'getActif':
+                addStudents();
+                break;
+        case 'deconnecter':  
+            toDisconnect($_SESSION);
+            break;
+}
+} else{
+echo "erreur";
+}
+} else {
+require('./views/vueIndex.php');
+}   
+
 ?>
