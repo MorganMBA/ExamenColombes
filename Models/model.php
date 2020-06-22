@@ -3,7 +3,7 @@
  function connect()
     {
         $bdd = dbConnect();
-        $param = $bdd->query('SELECT mail, motdepasse FROM praticien');
+        $param = $bdd->query('SELECT pseudo, motdepasse FROM praticien');
         $result = $param->fetch();
         return $result; 
     }
