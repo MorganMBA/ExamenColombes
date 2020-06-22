@@ -48,6 +48,10 @@
                     <li class="active">HOME</li>
                     <li><a href="index.php?action=getAge"> Afficher les âges </a></li>
                     <li><a href="index.php?action=getActif"> Afficher les actifs </a></li>
+                    <li><a href="index.php?action=getVoie"> Afficher les voies admin </a></li>
+                    <li><a href="index.php?action=getCategorie"> Afficher les categories </a></li>
+
+
                     <li><a href="index.php?action=recherche"> Recherche </a></li>
                     <li><a href="index.php?action=deconnecter"> Se deconnecter </a></li>
                 </ul><br>

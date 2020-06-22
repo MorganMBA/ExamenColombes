@@ -2,12 +2,12 @@
     require('./models/model.php');
     session_start();
 
-    function verifyConnect($mail,$password)
+    function verifyConnect($pseudo,$password)
     {
         $bdd = dbConnect();
         $ids = connect();
-       if( ($ids['mail'] == $mail) && ($ids['motdepasse'] == $password)){
-            $_SESSION['mail'] = $mail;
+       if( ($ids['pseudo'] == $pseudo) && ($ids['motdepasse'] == $password)){
+            $_SESSION['pseudo'] = $pseudo;
             $_SESSION['access'] = 1;
             require('./views/vueAccueil.php');
         } else {
@@ -32,7 +32,20 @@
 
     function getActif()
     {
-        $groupes = getAllActif();
+        $listActif = getAllTypActif();
         require('./views/vueActif.php');
     }
+
+    function getVoie()
+    {
+        $listVoies = getAllVoies();
+        require('./views/vueVoie.php');
+    }
+
+    function getCategorie()
+    {
+        $listVoies = getAllCategories();
+        require('./views/vueCategorie.php');
+    }
+
 ?>

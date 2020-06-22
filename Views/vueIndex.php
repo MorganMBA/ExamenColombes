@@ -7,7 +7,7 @@
         </div>
         
         <div class="form-label-group">
-            <input type="text" class="form-control" name="username"  required >
+            <input type="text" class="form-control" name="pseudo"  required >
             <label for="">pseudo : </label>
         </div>
 
