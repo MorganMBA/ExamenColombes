@@ -16,10 +16,26 @@
         return $req;
     }
 
-    function getAllActif()
+    function getAllTypActif()
     {
         $bdd =  dbConnect();
-        $req =  $bdd->query('SELECT * FROM actif');
+        $req =  $bdd->query('SELECT * FROM typeactif');
+
+        return $req;
+    }
+
+    function getAllVoies()
+    {
+        $bdd =  dbConnect();
+        $req =  $bdd->query('SELECT * FROM voieadmin');
+
+        return $req;
+    }
+
+    function getAllCategories()
+    {
+        $bdd =  dbConnect();
+        $req =  $bdd->query('SELECT * FROM categorie');
 
         return $req;
     }
