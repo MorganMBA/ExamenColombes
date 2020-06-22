@@ -26,7 +26,7 @@
 
     function getAge()
     {
-        $eleves = getAllAge();
+        $listage = getAllAge();
         require('./views/vueAge.php');
     }
 
