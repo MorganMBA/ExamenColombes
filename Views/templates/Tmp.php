@@ -47,8 +47,8 @@
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active">HOME</li>
                     <li><a href="index.php?action=getAge"> Afficher les âges </a></li>
-                    <li><a href="index.php?action=getActif"> Afficher les actifs </a></li>
-                    <li><a href="index.php?action=getVoie"> Afficher les voies admin </a></li>
+                    <li><a href="index.php?action=getTypeactif"> Afficher les types actifs </a></li>
+                    <li><a href="index.php?action=getVoieadmin"> Afficher les voies admin </a></li>
                     <li><a href="index.php?action=getCategorie"> Afficher les categories </a></li>
 
 

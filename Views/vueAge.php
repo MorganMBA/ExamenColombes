@@ -8,10 +8,12 @@
 
  </tr>
 
- <?php foreach ($age as $listage): ?>
+ <?php
+  foreach ($listage as $age): ?>
     <tr>
     <td><?= $age['age'] ?></td>
-
+    <td><a href="index.php?action=supprimerage">Supprimer</a></td>
+    <td><a href="index.php?action=modifierage">Modifier</a></td>
     </tr>
  <?php endforeach; ?>
  </table>

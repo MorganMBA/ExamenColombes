@@ -4,22 +4,28 @@
     if(isset($_GET['action'])) {
         switch($_GET['action']) {
                 case 'connexion':
+            echo $_POST['pseudo'];
+            echo $_POST['password'];
+
                     verifyConnect($_POST['pseudo'],$_POST['password']);
-                    break;
-        }  if(isset($_SESSION['access'])){ 
+                break;
+                
+        }  if(isset( $_SESSION['pseudo'])){ 
+            
             switch($_GET['action']) {  
         case 'getAge':
             getAge();
             break;
-        case 'getActif':
-            getAllTypActif();
-                break;
-        case 'getVoie':
-            getVoie();
+        case 'getTypeactif':
+            getTypeactif();
             break;
-        case 'getVoie':
+        case 'getVoieadmin':
+            getVoieadmin();
+            break;
+        case 'getCategorie':
             getCategorie();
-                            break;
+            break;
+        
         case 'deconnecter':  
             toDisconnect($_SESSION);
             break;

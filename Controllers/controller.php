@@ -8,7 +8,7 @@
         $ids = connect();
        if( ($ids['pseudo'] == $pseudo) && ($ids['motdepasse'] == $password)){
             $_SESSION['pseudo'] = $pseudo;
-            $_SESSION['access'] = 1;
+            $_SESSION['access'] = 1;            
             require('./views/vueAccueil.php');
         } else {
             require('./views/vueIndex.php');
@@ -30,22 +30,20 @@
         require('./views/vueAge.php');
     }
 
-    function getActif()
+    function getTypeactif()
     {
-        $listActif = getAllTypActif();
-        require('./views/vueActif.php');
+        $listtypeactif = getAllTypeactif();
+        require('./views/vueTypeactif.php');
     }
-
-    function getVoie()
+    function getVoieadmin()
     {
-        $listVoies = getAllVoies();
-        require('./views/vueVoie.php');
+        $listvoieadmin = getAllVoieadmin();
+        require('./views/vueVoieadmin.php');
     }
-
     function getCategorie()
     {
-        $listVoies = getAllCategories();
-        require('./views/vueCategorie.php');
+        $listcategorie = getAllCategorie();
+       // require('./views/vueCategorie.php');
     }
-
+    
 ?>

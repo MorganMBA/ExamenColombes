@@ -1,4 +1,4 @@
-<?php $title = 'Catrgorie'; ?>
+<?php $title = 'Categorie'; ?>
 
 <?php ob_start(); ?>
 <br /> <br /><br/><br />
@@ -8,10 +8,12 @@
 
  </tr>
 
- <?php foreach ($age as $listCategories): ?>
+ <?php
+  foreach ($listcategorie as $categorie): ?>
     <tr>
-    <td><?= $age['categorie'] ?></td>
-
+    <td><?= $categorie['categorie'] ?></td>
+    <td><a href="index.php?action=supprimercategorie">Supprimer</a></td>
+    <td><a href="index.php?action=modifiercategorie">Modifier</a></td>
     </tr>
  <?php endforeach; ?>
  </table>

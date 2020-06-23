@@ -16,7 +16,7 @@
         return $req;
     }
 
-    function getAllTypActif()
+    function getAllTypeactif()
     {
         $bdd =  dbConnect();
         $req =  $bdd->query('SELECT * FROM typeactif');
@@ -24,7 +24,7 @@
         return $req;
     }
 
-    function getAllVoies()
+    function getAllVoieadmin()
     {
         $bdd =  dbConnect();
         $req =  $bdd->query('SELECT * FROM voieadmin');
